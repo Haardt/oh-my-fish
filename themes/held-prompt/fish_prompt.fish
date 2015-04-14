@@ -153,7 +153,7 @@ function _get_battery_state
      if test $batPercent -lt 10
        echo -n $batteryChar$batPercent'%'
      end
-     if test $batPercent -lt 30
+     if test $batPercent -lt 30 -a $batPercent -gt 9
        set_color $budspencer_colors[5]
        echo -n $batteryChar$batPercent'%'
      end
