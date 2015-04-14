@@ -6,3 +6,7 @@ custom/*
 *.sw?
 
 plugins/ta/data/*
+.idea
+*.iml
+
+
