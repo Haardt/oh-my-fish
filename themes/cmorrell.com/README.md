@@ -2,7 +2,7 @@
 
 This is a theme I designed for myself but have given to a few friends and decided to publish for others' enjoyment.
 
-![Chris Morrell's Fish Theme](https://cloud.githubusercontent.com/assets/21592/4770904/8a58e026-5b89-11e4-927c-42a387b41df0.gif)
+![Held-Prompt Fish Theme](![held-prompt](https://cloud.githubusercontent.com/assets/1532506/7149002/aa188568-e308-11e4-96bf-23522a9a1a49.png))
 
 ## Features
 
