@@ -110,40 +110,40 @@ function __budspencer_prompt_git_symbols -d 'Displays the git symbols'
       if [ (count $git_ahead_behind) -eq 2 ]
         if [ $git_ahead_behind[1] -gt 0 ]
           set_color -o $budspencer_colors[5]
-          echo -n ' ↑'$git_ahead_behind[1]
+          echo -n ' ↑ '$git_ahead_behind[1]
         end
         if [ $git_ahead_behind[2] -gt 0 ]
           set_color -o $budspencer_colors[5]
-          echo -n ' ↓'$git_ahead_behind[2]
+          echo -n ' ↓ '$git_ahead_behind[2]
         end
       end
           if [ $git_status[1] -gt 0 ]
             set_color -o $budspencer_colors[12]
-            echo -n ' +'$git_status[1]
+            echo -n ' + '$git_status[1]
           end
           if [ $git_status[2] -gt 0 ]
             set_color -o $budspencer_colors[7]
-            echo -n ' –'$git_status[2]
+            echo -n ' – '$git_status[2]
           end
           if [ $git_status[3] -gt 0 ]
             set_color -o $budspencer_colors[10]
-            echo -n ' ✱'$git_status[3]
+            echo -n ' ✱ '$git_status[3]
           end
           if [ $git_status[4] -gt 0 ]
             set_color -o $budspencer_colors[8]
-            echo -n ' →'$git_status[4]
+            echo -n ' → '$git_status[4]
           end
           if [ $git_status[5] -gt 0 ]
             set_color -o $budspencer_colors[9]
-            echo -n ' ═'$git_status[5]
+            echo -n ' ═ '$git_status[5]
           end
           if [ $git_status[6] -gt 0 ]
             set_color -o $budspencer_colors[4]
-            echo -n ' ●'$git_status[6]
+            echo -n ' ● '$git_status[6]
           end
           if [ $git_stashed -gt 0 ]
             set_color -o $budspencer_colors[11]
-            echo -n ' ✭'$git_stashed
+            echo -n ' ✭ '$git_stashed
           end
       end
       set_color -b $budspencer_colors[3] normal

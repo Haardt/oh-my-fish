@@ -137,14 +137,18 @@ function fish_prompt
 end
 
 function _get_battery_state
-  set -l batArray (acpi --battery |  sed "s/ /\n/g")
+  set -l batArray (acpi --battery 2>/dev/null |  sed "s/ /\n/g")
 
-  if contains 'Battery' $batArray  and contains 'Discharging,' $batArray
+  if contains 'Battery' $batArray
+    if contains 'Charging,' $batArray
      set batteryChar "⏚"
+    end
   end
 
-  if contains 'Battery' $batArray  and contains 'Charging,' $batArray
+  if contains 'Battery' $batArray
+    if contains 'Discharging,' $batArray
      set batteryChar "⌁"
+    end
   end
 
   if contains 'Battery' $batArray
